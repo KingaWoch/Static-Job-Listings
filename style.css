@@ -1,0 +1,195 @@
+:root {
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+  --BG-Light-Grayish-Cyan: hsl(180, 52%, 96%); /* Background */
+  --FT-Light-Grayish-Cyan: hsl(180, 31%, 95%); /*  Filter Tablets */
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  --White: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.97rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  height: 156px;
+  background-image: url(images/bg-header-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-color: var(--Desaturated-Dark-Cyan);
+}
+
+main {
+  background-color: var(--BG-Light-Grayish-Cyan);
+  padding: 3rem 5rem;
+  position: relative;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--White);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 3px 5px 10px 0px rgba(91, 164, 164, 0.29);
+  -moz-box-shadow: 3px 5px 10px 0px rgba(91, 164, 164, 0.29);
+  box-shadow: 3px 5px 10px 0px rgba(91, 164, 164, 0.29);
+  position: absolute;
+  top: -2rem;
+  right: 5rem;
+  left: 5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.picked-categories {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  color: var(--Desaturated-Dark-Cyan);
+  font-weight: 700;
+}
+
+.picked-categories li {
+  background-color: var(--FT-Light-Grayish-Cyan);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.picked-category {
+  padding: 0.4rem 0.5rem;
+}
+
+.remove {
+  border: none;
+  background-color: var(--Desaturated-Dark-Cyan);
+  padding: 0.4rem;
+  display: flex;
+}
+
+.remove:hover {
+  background-color: var(--Very-Dark-Grayish-Cyan);
+}
+
+.clear {
+  background-color: transparent;
+  color: var(--Desaturated-Dark-Cyan);
+  border: none;
+  font-weight: 700;
+}
+
+.clear:hover {
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1rem;
+  max-width: 1100px;
+  list-style: none;
+}
+
+.job-item {
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 3px 5px 10px 0px rgba(91, 164, 164, 0.29);
+  -moz-box-shadow: 3px 5px 10px 0px rgba(91, 164, 164, 0.29);
+  box-shadow: 3px 5px 10px 0px rgba(91, 164, 164, 0.29);
+  border-left: 4px solid var(--Desaturated-Dark-Cyan);
+}
+
+.job {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.company {
+  font-weight: 700;
+}
+
+.name {
+  color: var(--Desaturated-Dark-Cyan);
+  margin-right: 0.5rem;
+}
+
+.new,
+.featured {
+  color: var(--White);
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.9rem;
+}
+
+.new {
+  background-color: var(--Desaturated-Dark-Cyan);
+}
+
+.featured {
+  background-color: var(--Very-Dark-Grayish-Cyan);
+}
+
+.role {
+  color: var(--Very-Dark-Grayish-Cyan);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.role:hover {
+  color: var(--Desaturated-Dark-Cyan);
+}
+
+.job-details ul {
+  display: flex;
+  gap: 2rem;
+  list-style: disc;
+  color: var(--Dark-Grayish-Cyan);
+}
+
+.posted-at {
+  list-style: none;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.categories a {
+  background-color: var(--FT-Light-Grayish-Cyan);
+  color: var(--Desaturated-Dark-Cyan);
+  font-weight: 700;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.categories a:hover {
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: var(--White);
+}

@@ -15,8 +15,90 @@
     <title>Frontend Mentor | Job Listings</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header></header>
+    <main id="root">
+      <div class="filter">
+        <ul class="picked-categories">
+          <li>
+            <span class="picked-category">Frontend</span>
+            <button class="remove">
+              <img src="images/icon-remove.svg" alt="remove" />
+            </button>
+          </li>
+          <li>
+            <span class="picked-category">Frontend</span>
+            <button class="remove">
+              <img src="images/icon-remove.svg" alt="remove" />
+            </button>
+          </li>
+          <li>
+            <span class="picked-category">CSS</span>
+            <button class="remove">
+              <img src="images/icon-remove.svg" alt="remove" />
+            </button>
+          </li>
+        </ul>
+        <button class="clear">Clear</button>
+      </div>
+      <ul class="list">
+        <li class="job-item">
+          <img src="images/photosnap.svg" alt="" class="logo" />
+          <div class="job">
+            <div class="company">
+              <span class="name">Photosnap</span>
+              <span class="new">NEW!</span>
+              <span class="featured">FEATURED</span>
+            </div>
+            <a href="#">
+              <h2 class="role">Senior Frontend Developer</h2>
+            </a>
+            <div class="job-details">
+              <ul>
+                <li class="posted-at">1d ago</li>
+                <li class="contract">Full Time</li>
+                <li class="location">USA only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="categories">
+            <a href="">Frontend</a><a href="">Senior</a><a href="">HTML</a
+            ><a href="">CSS</a><a href="">JavaScript</a>
+          </div>
+        </li>
+        <li class="job-item">
+          <img src="images/photosnap.svg" alt="" class="logo" />
+          <div class="job">
+            <div class="company">
+              <span class="name">Photosnap</span>
+              <span class="new">NEW!</span>
+              <span class="featured">FEATURED</span>
+            </div>
+            <a href="#">
+              <h2 class="role">Senior Frontend Developer</h2>
+            </a>
+            <div class="job-details">
+              <ul>
+                <li class="posted-at">1d ago</li>
+                <li class="contract">Full Time</li>
+                <li class="location">USA only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="categories">
+            <a href="">Frontend</a><a href="">Senior</a><a href="">HTML</a
+            ><a href="">CSS</a><a href="">JavaScript</a>
+          </div>
+        </li>
+      </ul>
+    </main>
     <!-- Item Start -->
     Photosnap New! Featured Senior Frontend Developer 1d ago Full Time USA only
     <!-- Role -->
